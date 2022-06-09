@@ -10,7 +10,7 @@
     "highcharts-export-server": "./bin/cli.js"
   },
   "scripts": {
-    "preinstall": "node ./pre.build.js",
+    "preinstall": "export ACCEPT_HIGHCHARTS_LICENSE=1; node ./pre.build.js",
     "postinstall": "node ./post.build.js",
     "install": "node ./build.js"
   },
